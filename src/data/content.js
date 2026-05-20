@@ -6,6 +6,7 @@ export const content = {
       { href: "#skills", tr: "Beceriler", en: "Skills" },
       { href: "#services", tr: "Hizmetler", en: "Services" },
       { href: "#contact", tr: "İletişim", en: "Contact" },
+      { href: "/Begum_Emir_CV.pdf", tr: "CV", en: "CV", download: true },
     ]
   },
   hero: {
@@ -19,10 +20,14 @@ export const content = {
     eyebrow: { tr: "Hakkımda", en: "About Me" },
     title: { tr: "Kod yazan,<br><em>hata yakalayan.</em>", en: "I build it.<br><em>Then I break it.</em>" },
     sub: { tr: "Geliştirici ve test mühendisi olarak çift bakış açısı.", en: "Dual perspective as a developer and QA engineer." },
-    p1: { tr: "Maltepe Üniversitesi Bilgisayar Mühendisliği mezunuyum. Web ve mobil uygulamalar geliştiriyorum; işletmeler için sıfırdan tasarlayıp canlıya alıyorum.", en: "Maltepe University Computer Engineering graduate. I build web and mobile applications, taking projects from design to deployment." },
+    p1: { tr: "İşletmeler için sıfırdan web ve mobil uygulamalar geliştirip canlıya alıyorum. Tasarımdan deploy'a tüm süreci yönetiyorum.", en: "I build web and mobile applications for businesses — from design to deployment, I manage the entire process.Computer Engineering graduate. I build web and mobile applications, taking projects from design to deployment." },
     p2: { 
-        tr: "QA mühendisi olarak Agile ortamında test senaryoları hazırladım, Jira ile bug takibi yaptım ve regresyon testleri yürüttüm.",
-        en: "As a QA engineer I wrote test scenarios in Agile, managed bugs in Jira, and conducted regression testing."
+        tr: "Aynı zamanda QA mühendisiyim — yaptığım işi hem geliştirici hem test uzmanı gözüyle değerlendiriyorum. Bu çift bakış açısı, daha az hata ve daha kaliteli ürün anlamına geliyor.",
+        en: "I'm also a QA engineer — I evaluate what I build through both a developer and tester lens. This dual perspective means fewer bugs and better quality products."
+        },
+    p3: { 
+        tr: "QA mühendisi veya web geliştirici pozisyonlarında iş fırsatlarına açığım.",
+        en: "Open to opportunities as a QA engineer or web developer."
         },
   },
   contact: {
@@ -40,8 +45,8 @@ export const content = {
         price: "5.500₺",
         tagline: { tr: "Dijitale ilk adım", en: "Your first step online" },
         features: {
-        tr: ["1 sayfalık modern site", "Hakkımda, Projeler, İletişim bölümleri", "İletişim formu", "Mobil uyumlu tasarım", "Hızlı yükleme & deploy", "1 ay destek"],
-        en: ["1-page modern site", "About, Projects, Contact sections", "Contact form", "Mobile friendly design", "Fast loading & deploy", "1 month support"]
+        tr: ["1 sayfalık modern site", "İşletmenize özel bölümler", "İletişim formu", "Mobil uyumlu tasarım", "Hızlı yükleme & deploy", "1 ay destek"],
+        en: ["1-page modern site", "Custom sections for your business", "Contact form", "Mobile friendly design", "Fast loading & deploy", "1 month support"]
         },
         highlight: false,
         extra: { tr: "+ Domain kurulumu 1000₺", en: "+ Domain setup 1000₺" }
@@ -50,7 +55,7 @@ export const content = {
         icon: "🌿",
         name: "Professional",
         price: "12.000₺",
-        tagline: { tr: "Fark yaratan portföy", en: "A portfolio that stands out" },
+        tagline: { tr: "Kurumsal dijital varlık", en: "Your professional online presence" },
         features: {
           tr: ["Çok sayfalı site", "TR/EN dil desteği", "SEO optimizasyonu", "Google Analytics", "Domain kurulumu dahil", "3 ay destek"],
           en: ["Multi-page site", "TR/EN language support", "SEO optimization", "Google Analytics", "Domain setup included", "3 months support"]

@@ -21,6 +21,7 @@ export default function About({ lang }) {
             <div className="space-y-3">
               <p className="text-[#5a4e6a] text-sm font-light leading-relaxed">{a.p1[lang]}</p>
               <p className="text-[#5a4e6a] text-sm font-light leading-relaxed">{a.p2[lang]}</p>
+              <p className="text-[#5a4e6a] text-sm font-light leading-relaxed">{a.p3[lang]}</p>
             </div>
           </div>
 

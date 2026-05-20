@@ -8,7 +8,7 @@ export default function Navbar({ lang, setLang }) {
         <a href="#hero" className="font-serif text-[17px] font-bold text-[#1c1424]">Begüm Emir</a>
         <nav className="hidden md:flex gap-1">
           {links.map((link) => (
-            <a key={link.href} href={link.href} className="text-[#5a4e6a] text-[13px] px-3 py-1.5 rounded-lg hover:bg-[#ddd0f5] hover:text-[#8b6bbf] transition-all">{link[lang]}</a>
+            <a key={link.href} href={link.href} target={link.download ? "_blank" : undefined} rel={link.download ? "noopener noreferrer" : undefined} className="text-[#5a4e6a] text-[13px] px-3 py-1.5 rounded-lg hover:bg-[#ddd0f5] hover:text-[#8b6bbf] transition-all">{link[lang]}</a>
           ))}
         </nav>
       </div>
