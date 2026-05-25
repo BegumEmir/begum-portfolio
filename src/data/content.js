@@ -33,7 +33,10 @@ export const content = {
   contact: {
     eyebrow: { tr: "İletişim", en: "Contact" },
     title: { tr: "Birlikte<br><em>çalışalım.</em>", en: "Let's work<br><em>together.</em>" },
-    desc: { tr: "Web sitesi veya test otomasyonu için ulaşın. 24 saat içinde dönüyorum.", en: "Reach out for web dev or QA work. I respond within 24 hours." },
+    desc: { 
+      tr: "Benimle çalışmak istiyorsanız ulaşın.", 
+      en: "Feel free to reach out if you'd like to work together." 
+}
   },
   services: {
     eyebrow: { tr: "Hizmetler", en: "Services" },

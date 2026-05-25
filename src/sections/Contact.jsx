@@ -42,8 +42,7 @@ export default function Contact({ lang }) {
 
             <div className="flex flex-col gap-3">
               {[
-                { icon: "💼", label: "LinkedIn", value: "linkedin.com/in/begüm-e", href: "https://www.linkedin.com/in/beg%C3%BCm-e-4513a3232/", bg: "bg-blue-50" },
-                { icon: "✉️", label: lang === "tr" ? "E-posta" : "Email", value: "begumemir17@gmail.com", href: "mailto:begumemir17@gmail.com", bg: "bg-[#f0c4d0]/40" },
+                { icon: "✉️", label: lang === "tr" ? "E-posta" : "Email", value: "hello@begumemir.com", href: "mailto:hello@begumemir.com", bg: "bg-[#f0c4d0]/40" },
                 { icon: "📄", label: lang === "tr" ? "CV İndir" : "Download CV", value: "Begum_Emir_CV.pdf", href: "/Begum_Emir_CV.pdf", bg: "bg-[#cde8d8]/50" },
               ].map((link) => (
                 <a
@@ -51,7 +50,7 @@ export default function Contact({ lang }) {
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                   download={link.href === "/Begum_Emir_CV.pdf" ? "Begum_Emir_CV.pdf" : undefined}
+                  download={link.href === "/Begum_Emir_CV.pdf" ? "Begum_Emir_CV.pdf" : undefined}
                   className="flex items-center gap-4 p-4 rounded-2xl border border-[#e8dff0] bg-[#faf7f4] hover:border-[#8b6bbf] hover:bg-[#ddd0f5] hover:translate-x-1 transition-all"
                 >
                   <div className={`w-10 h-10 rounded-xl ${link.bg} flex items-center justify-center text-lg flex-shrink-0`}>
