@@ -1,8 +1,8 @@
 import { content } from "../data/content"
-
+ 
 export default function Services({ lang }) {
   const s = content.services
-
+ 
   return (
     <section id="services" className="max-w-6xl mx-auto px-4 md:px-12 py-12 md:py-24">
       <div className="flex items-center gap-3 mb-3">
@@ -15,7 +15,7 @@ export default function Services({ lang }) {
         className="font-serif text-3xl md:text-5xl font-bold tracking-tight mb-12"
         dangerouslySetInnerHTML={{ __html: s.title[lang] }}
       />
-
+ 
       {/* Kartlar */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-12">
         {s.packages.map((pkg) => (
@@ -47,15 +47,15 @@ export default function Services({ lang }) {
               <div className="text-xs text-[#8b6bbf] font-medium mb-4">{pkg.extra[lang]}</div>
             )}
             <a
-            href="#contact"
-            onClick={() => {
-              setTimeout(() => {
-                const el = document.getElementById('subject-input')
-                if (el) el.value = lang === "tr"
-                  ? `${pkg.name} paketi hakkında bilgi almak istiyorum`
-                  : `I'd like to know more about the ${pkg.name} package`
-              }, 500)
-            }}
+              href="#contact"
+              onClick={() => {
+                setTimeout(() => {
+                  const el = document.getElementById('subject-input')
+                  if (el) el.value = lang === "tr"
+                    ? `${pkg.name} paketi hakkında bilgi almak istiyorum`
+                    : `I'd like to know more about the ${pkg.name} package`
+                }, 500)
+              }}
               className={`text-center py-2.5 rounded-xl text-sm font-medium transition-all ${
                 pkg.highlight
                   ? "bg-[#8b6bbf] text-white hover:bg-[#7a5aaf]"
@@ -67,30 +67,38 @@ export default function Services({ lang }) {
           </div>
         ))}
       </div>
-
+ 
       {/* Bakım Paketi */}
-      <div className="border border-[#e8dff0] rounded-2xl p-6 bg-white flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-        <div className="flex items-center gap-4">
-          <div className="text-3xl">🔧</div>
-          <div>
-            <div className="font-serif text-xl font-bold mb-1">{s.maintenance.title[lang]}</div>
-            <div className="flex gap-3">
-              {s.maintenance.features[lang].map((f) => (
-                <span key={f} className="text-xs text-[#5a4e6a] flex items-center gap-1">
-                  <span className="text-[#4a8c68]">✓</span> {f}
-                </span>
-              ))}
+      <div className="border border-[#e8dff0] rounded-2xl p-6 bg-white flex flex-col gap-4">
+        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+          <div className="flex items-center gap-4">
+            <div className="text-3xl">🔧</div>
+            <div>
+              <div className="font-serif text-xl font-bold mb-1">{s.maintenance.title[lang]}</div>
+              <div className="flex flex-wrap gap-3">
+                {s.maintenance.features[lang].map((f) => (
+                  <span key={f} className="text-xs text-[#5a4e6a] flex items-center gap-1">
+                    <span className="text-[#4a8c68]">✓</span> {f}
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
+          <div className="text-right">
+            <div className="text-2xl font-bold text-[#1c1424] mb-2">{s.maintenance.price}</div>
+            <a href="#contact" className="text-sm font-medium text-[#8b6bbf] hover:underline">
+              {lang === "tr" ? "İletişime Geç →" : "Get in Touch →"}
+            </a>
+          </div>
         </div>
-        <div className="text-right">
-          <div className="text-2xl font-bold text-[#1c1424] mb-2">{s.maintenance.price}</div>
-          <a href="#contact" className="text-sm font-medium text-[#8b6bbf] hover:underline">
-            {lang === "tr" ? "İletişime Geç →" : "Get in Touch →"}
-          </a>
-        </div>
+        {s.maintenance.note && (
+          <p className="text-xs text-[#5a4e6a] border-t border-[#e8dff0] pt-3 font-light">
+            {s.maintenance.note[lang]}
+          </p>
+        )}
+ 
       </div>
-
+ 
       {/* Karşılaştırma Tablosu */}
       <div className="mt-12">
         <h3 className="font-serif text-2xl font-bold mb-6 text-center">
@@ -109,15 +117,15 @@ export default function Services({ lang }) {
             <tbody>
               {[
                 { feature: { tr: "Mobil uyumlu tasarım", en: "Mobile friendly design" }, s: true, p: true, b: true },
+                { feature: { tr: "SEO optimizasyonu", en: "SEO optimization" }, s: true, p: true, b: true },
+                { feature: { tr: "Google Analytics", en: "Google Analytics" }, s: true, p: true, b: true },
+                { feature: { tr: "Google Search Console", en: "Google Search Console" }, s: true, p: true, b: true },
                 { feature: { tr: "Çok sayfalı site", en: "Multi-page site" }, s: false, p: true, b: true },
-                { feature: { tr: "TR/EN dil desteği", en: "TR/EN language" }, s: false, p: true, b: true },
-                { feature: { tr: "SEO optimizasyonu", en: "SEO optimization" }, s: false, p: true, b: true },
-                { feature: { tr: "Google Analytics", en: "Google Analytics" }, s: false, p: true, b: true },
-                { feature: { tr: "Domain kurulumu", en: "Domain setup" }, s: false, p: true, b: true },
-                { feature: { tr: "Sanity CMS", en: "Sanity CMS" }, s: false, p: false, b: true },
-                { feature: { tr: "Revizyon hakkı", en: "Revision" }, s: false, p: false, b: true },
-                { feature: { tr: "Hosting takibi", en: "Hosting monitoring" }, s: false, p: false, b: true },
-                { feature: { tr: "Destek süresi", en: "Support" }, s: { tr: "1 ay", en: "1 month" }, p: { tr: "3 ay", en: "3 months" }, b: { tr: "6 ay", en: "6 months" } },
+                { feature: { tr: "İçerik yönetim paneli", en: "Content management panel" }, s: false, p: true, b: true },
+                { feature: { tr: "Domain kurulumu", en: "Domain setup" }, s: true, p: true, b: true },
+                { feature: { tr: "Google Maps entegrasyonu", en: "Google Maps integration" }, s: false, p: false, b: true },
+                { feature: { tr: "Google İşletme Profili", en: "Google Business Profile" }, s: false, p: false, b: true },
+ 
               ].map((row, i) => (
                 <tr key={i} className={`border-b border-[#e8dff0] ${i % 2 === 0 ? "bg-[#faf7f4]" : "bg-white"}`}>
                   <td className="py-3 px-4 text-[#5a4e6a]">{row.feature[lang]}</td>
@@ -134,6 +142,13 @@ export default function Services({ lang }) {
           </table>
         </div>
       </div>
+ 
+      {/* Genel Not */}
+      {s.generalNote && (
+        <p className="mt-8 text-xs text-[#5a4e6a] font-light text-center">
+          * {s.generalNote[lang]}
+        </p>
+      )}
     </section>
   )
 }

@@ -29,7 +29,7 @@ export default function About({ lang }) {
             {[
               { icon: "🎓", label: lang === "tr" ? "Eğitim" : "Education", value: lang === "tr" ? "Maltepe Üni. · 2025" : "Maltepe Uni. · 2025" },
               { icon: "💼", label: lang === "tr" ? "Deneyim" : "Experience", value: "Junior QA @ Cross4Cloud" },
-              { icon: "📍", label: lang === "tr" ? "Konum" : "Location", value: "İstanbul" },
+              { icon: "📍", label: lang === "tr" ? "Konum" : "Location", value: "Türkiye" },
               { icon: "🌍", label: lang === "tr" ? "Diller" : "Languages", value: lang === "tr" ? "Türkçe · İngilizce" : "Turkish · English" },
             ].map((fact) => (
               <div key={fact.label} className="p-4 rounded-2xl border border-[#e8dff0] bg-[#faf7f4] hover:border-[#ddd0f5] hover:-translate-y-0.5 transition-all">
