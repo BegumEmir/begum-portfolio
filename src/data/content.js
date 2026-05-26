@@ -57,7 +57,7 @@ export const content = {
       {
         icon: "🌿",
         name: "Professional",
-        price: "10.000₺",
+        price: "11.000₺",
         tagline: { tr: "Yönetilebilir site", en: "Manageable website" },
         features: {
           tr: ["Çok sayfalı site", "İçerik yönetim paneli", "SEO, Google Analytics & Search Console", "Domain kurulumu dahil"],
@@ -69,7 +69,7 @@ export const content = {
       {
         icon: "🌳",
         name: "Business",
-        price: "12.000₺",
+        price: "14.000₺",
         tagline: { tr: "Tam donanımlı", en: "Fully equipped" },
         features: {
           tr: ["Professional paketteki her şey", "Google Maps entegrasyonu", "Google İşletme Profili kurulumu", "1 yıl ücretsiz bakım paketi dahil", "Aylık performans raporu"],
