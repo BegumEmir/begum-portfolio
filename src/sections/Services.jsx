@@ -125,6 +125,8 @@ export default function Services({ lang }) {
                 { feature: { tr: "Domain kurulumu", en: "Domain setup" }, s: true, p: true, b: true },
                 { feature: { tr: "Google Maps entegrasyonu", en: "Google Maps integration" }, s: false, p: false, b: true },
                 { feature: { tr: "Google İşletme Profili", en: "Google Business Profile" }, s: false, p: false, b: true },
+                { feature: { tr: "1 yıl ücretsiz bakım paketi", en: "1 year free maintenance" }, s: false, p: false, b: true },
+                { feature: { tr: "Aylık performans raporu", en: "Monthly performance report" }, s: false, p: false, b: true },
  
               ].map((row, i) => (
                 <tr key={i} className={`border-b border-[#e8dff0] ${i % 2 === 0 ? "bg-[#faf7f4]" : "bg-white"}`}>

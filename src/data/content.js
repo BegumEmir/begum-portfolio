@@ -72,8 +72,8 @@ export const content = {
         price: "12.000₺",
         tagline: { tr: "Tam donanımlı", en: "Fully equipped" },
         features: {
-          tr: ["Professional paketteki her şey", "Google Maps entegrasyonu", "Google İşletme Profili kurulumu"],
-          en: ["Everything in Professional", "Google Maps integration", "Google Business Profile setup"]
+          tr: ["Professional paketteki her şey", "Google Maps entegrasyonu", "Google İşletme Profili kurulumu", "1 yıl ücretsiz bakım paketi dahil", "Aylık performans raporu"],
+          en: ["Everything in Professional", "Google Maps integration", "Google Business Profile setup", "1 year free maintenance included", "Monthly performance report"]
         },
         highlight: true,
         extra: null
