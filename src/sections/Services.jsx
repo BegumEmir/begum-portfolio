@@ -35,7 +35,7 @@ export default function Services({ lang }) {
             <div className="text-3xl mb-2">{pkg.icon}</div>
             <div className="font-serif text-xl font-bold mb-1">{pkg.name}</div>
             <div className="text-[#5a4e6a] text-xs font-light mb-4">{pkg.tagline[lang]}</div>
-            <div className="text-3xl font-bold text-[#1c1424] mb-6">{pkg.price}</div>
+            {/* <div className="text-3xl font-bold text-[#1c1424] mb-6">{pkg.price}</div> */}
             <ul className="space-y-2 flex-1 mb-6">
               {pkg.features[lang].map((f) => (
                 <li key={f} className="flex items-start gap-2 text-sm text-[#5a4e6a]">
@@ -85,7 +85,7 @@ export default function Services({ lang }) {
             </div>
           </div>
           <div className="text-right">
-            <div className="text-2xl font-bold text-[#1c1424] mb-2">{s.maintenance.price}</div>
+          {/* <div className="text-2xl font-bold text-[#1c1424] mb-2">{s.maintenance.price}</div> */}
             <a href="#contact" className="text-sm font-medium text-[#8b6bbf] hover:underline">
               {lang === "tr" ? "İletişime Geç →" : "Get in Touch →"}
             </a>
@@ -120,10 +120,13 @@ export default function Services({ lang }) {
                 { feature: { tr: "SEO optimizasyonu", en: "SEO optimization" }, s: true, p: true, b: true },
                 { feature: { tr: "Google Analytics", en: "Google Analytics" }, s: true, p: true, b: true },
                 { feature: { tr: "Google Search Console", en: "Google Search Console" }, s: true, p: true, b: true },
+                { feature: { tr: "Domain kurulumu", en: "Domain setup" }, s: true, p: true, b: true },
                 { feature: { tr: "Çok sayfalı site", en: "Multi-page site" }, s: false, p: true, b: true },
                 { feature: { tr: "İçerik yönetim paneli", en: "Content management panel" }, s: false, p: true, b: true },
-                { feature: { tr: "Domain kurulumu", en: "Domain setup" }, s: true, p: true, b: true },
-                { feature: { tr: "Google Maps entegrasyonu", en: "Google Maps integration" }, s: false, p: false, b: true },
+                { feature: { tr: "Blog / Haber yönetimi", en: "Blog / News management" }, s: false, p: true, b: true },
+                { feature: { tr: "Özel animasyonlar & tasarım", en: "Custom animations & design" }, s: false, p: true, b: true },
+                { feature: { tr: "7/24 WhatsApp desteği", en: "7/24 WhatsApp support" }, s: false, p: false, b: true },
+                { feature: { tr: "Özel e-posta kurulumu", en: "Custom email setup" }, s: false, p: false, b: true },
                 { feature: { tr: "Google İşletme Profili", en: "Google Business Profile" }, s: false, p: false, b: true },
                 { feature: { tr: "1 yıl ücretsiz bakım paketi", en: "1 year free maintenance" }, s: false, p: false, b: true },
                 { feature: { tr: "Aylık performans raporu", en: "Monthly performance report" }, s: false, p: false, b: true },
@@ -144,6 +147,13 @@ export default function Services({ lang }) {
           </table>
         </div>
       </div>
+
+      {/* Promo Not */}
+      {s.promoNote && (
+        <p className="mt-6 text-sm text-[#8b6bbf] font-medium text-center bg-[#ddd0f5]/20 border border-[#e8dff0] rounded-2xl py-4 px-6">
+          {s.promoNote[lang]}
+        </p>
+      )}
  
       {/* Genel Not */}
       {s.generalNote && (
