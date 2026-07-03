@@ -118,17 +118,15 @@ export default function Services({ lang }) {
               {[
                 { feature: { tr: "Mobil uyumlu tasarım", en: "Mobile friendly design" }, s: true, p: true, b: true },
                 { feature: { tr: "SEO optimizasyonu", en: "SEO optimization" }, s: true, p: true, b: true },
-                { feature: { tr: "Google Analytics", en: "Google Analytics" }, s: true, p: true, b: true },
                 { feature: { tr: "Google Search Console", en: "Google Search Console" }, s: true, p: true, b: true },
                 { feature: { tr: "Domain kurulumu", en: "Domain setup" }, s: true, p: true, b: true },
                 { feature: { tr: "Çok sayfalı site", en: "Multi-page site" }, s: false, p: true, b: true },
                 { feature: { tr: "İçerik yönetim paneli", en: "Content management panel" }, s: false, p: true, b: true },
                 { feature: { tr: "Blog / Haber yönetimi", en: "Blog / News management" }, s: false, p: true, b: true },
+                { feature: { tr: "İki dilli destek (TR/EN)", en: "Bilingual support (TR/EN)" }, s: false, p: true, b: true },
                 { feature: { tr: "Özel animasyonlar & tasarım", en: "Custom animations & design" }, s: false, p: true, b: true },
-                { feature: { tr: "7/24 WhatsApp desteği", en: "7/24 WhatsApp support" }, s: false, p: false, b: true },
                 { feature: { tr: "Özel e-posta kurulumu", en: "Custom email setup" }, s: false, p: false, b: true },
                 { feature: { tr: "Google İşletme Profili", en: "Google Business Profile" }, s: false, p: false, b: true },
-                { feature: { tr: "1 yıl ücretsiz bakım paketi", en: "1 year free maintenance" }, s: false, p: false, b: true },
                 { feature: { tr: "Aylık performans raporu", en: "Monthly performance report" }, s: false, p: false, b: true },
  
               ].map((row, i) => (
@@ -150,9 +148,16 @@ export default function Services({ lang }) {
 
       {/* Promo Not */}
       {s.promoNote && (
-        <p className="mt-6 text-sm text-[#8b6bbf] font-medium text-center bg-[#ddd0f5]/20 border border-[#e8dff0] rounded-2xl py-4 px-6">
-          {s.promoNote[lang]}
-        </p>
+        <div className="mt-6 text-center bg-[#ddd0f5]/20 border border-[#e8dff0] rounded-2xl py-4 px-6">
+          <p className="text-sm text-[#8b6bbf] font-medium">
+            {s.promoNote[lang]}
+          </p>
+          {s.promoSubNote && (
+            <p className="mt-1 text-xs text-[#5a4e6a] font-light">
+              {s.promoSubNote[lang]}
+            </p>
+          )}
+        </div>
       )}
  
       {/* Genel Not */}

@@ -4,7 +4,7 @@ export const skills = {
     label: { tr: "Frontend", en: "Frontend" },
     title: { tr: "Frontend Geliştirme", en: "Frontend Development" },
     desc: { tr: "Kullanıcı odaklı web ve mobil arayüzler.", en: "User-focused web and mobile interfaces." },
-    items: ["⚛️ React", "📱 React Native", "🔷 TypeScript", "🟨 JavaScript", "🎨 HTML/CSS", "📦 Expo", "💨 Tailwind CSS", "⚡ Vite", "🎛️ Sanity CMS"]
+    items: ["⚛️ React", "▲ Next.js", "📱 React Native", "🔷 TypeScript", "🟨 JavaScript", "🎨 HTML/CSS", "📦 Expo", "💨 Tailwind CSS", "⚡ Vite", "🎛️ Sanity CMS", "🌍 next-intl"]
   },
   qa: {
     icon: "🧪",
@@ -18,13 +18,13 @@ export const skills = {
     label: { tr: "Backend", en: "Backend" },
     title: { tr: "Backend & Araçlar", en: "Backend & Tools" },
     desc: { tr: "Sunucu tarafı ve geliştirme araçları.", en: "Server-side and development tools." },
-    items: ["🔥 Firebase", "🔧 Git", "🐙 GitHub", "💻 VS Code"]
+    items: ["🔥 Firebase", "🔧 Git", "🐙 GitHub", "💻 VS Code", "✨ Claude Code"]
   },
   deploy: {
     icon: "🚀",
     label: { tr: "Deploy", en: "Deployment" },
     title: { tr: "Deploy & Yayınlama", en: "Deployment" },
     desc: { tr: "Geliştirmeden canlıya tam süreç.", en: "End-to-end from development to production." },
-    items: ["🌐 Netlify", "▲ Vercel", "☁️ Cloudflare Pages", "🐙 GitHub"]
+    items: ["🌐 Netlify", "▲ Vercel", "☁️ Cloudflare Pages"]
   }
 }

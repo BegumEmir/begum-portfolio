@@ -45,8 +45,8 @@ packages: [
     price: "8.000₺",
     tagline: { tr: "Dijitale ilk adım", en: "Your first step online" },
     features: {
-      tr: ["1 sayfalık modern site", "İşletmenize özel bölümler", "İletişim formu", "Mobil uyumlu tasarım", "Domain kurulumu dahil", "SEO, Google Analytics & Search Console", "Hızlı yükleme & deploy"],
-      en: ["1-page modern site", "Custom sections for your business", "Contact form", "Mobile friendly design", "Domain setup included", "SEO, Google Analytics & Search Console", "Fast loading & deploy"]
+      tr: ["1 sayfalık modern site", "İşletmenize özel bölümler", "Mobil uyumlu tasarım", "Domain kurulumu dahil", "SEO & Search Console"],
+      en: ["1-page modern site", "Custom sections for your business", "Mobile friendly design", "Domain setup included", "SEO & Search Console"]
     },
     highlight: false,
     extra: null
@@ -57,8 +57,8 @@ packages: [
     price: "13.000₺",
     tagline: { tr: "Yönetilebilir site", en: "Manageable website" },
     features: {
-      tr: ["Starter paketteki her şey", "Çok sayfalı site", "İçerik yönetim paneli (Sanity CMS)", "Blog / Haber yönetimi", "Gelişmiş SEO optimizasyonu", "Özel animasyonlar & tasarım"],
-      en: ["Everything in Starter", "Multi-page site", "Content management panel (Sanity CMS)", "Blog / News management", "Advanced SEO optimization", "Custom animations & design"]
+      tr: ["Starter paketteki her şey", "Çok sayfalı site", "İçerik yönetim paneli (Sanity CMS)", "Blog / Haber yönetimi", "Gelişmiş SEO optimizasyonu", "Özel animasyonlar & tasarım", "İki dilli destek (TR/EN)"],
+      en: ["Everything in Starter", "Multi-page site", "Content management panel (Sanity CMS)", "Blog / News management", "Advanced SEO optimization", "Custom animations & design", "Bilingual support (TR/EN)"]
     },
     highlight: false,
     extra: null
@@ -69,8 +69,8 @@ packages: [
     price: "18.000₺",
     tagline: { tr: "Tam donanımlı", en: "Fully equipped" },
     features: {
-      tr: ["Professional paketteki her şey", "Özel e-posta kurulumu (info@isletme.com)", "Google İşletme Profili kurulumu", "1 yıl ücretsiz bakım paketi dahil", "Aylık performans raporu", "7/24 WhatsApp desteği"],
-      en: ["Everything in Professional", "Custom email setup (info@business.com)", "Google Business Profile setup", "1 year free maintenance included", "Monthly performance report", "7/24 WhatsApp support"]
+      tr: ["Professional paketteki her şey", "Özel e-posta kurulumu (info@isletme.com)", "Google İşletme Profili kurulumu", "Aylık performans raporu"],
+      en: ["Everything in Professional", "Custom email setup (info@business.com)", "Google Business Profile setup", "Monthly performance report"]
     },
     highlight: true,
     extra: null
@@ -78,33 +78,31 @@ packages: [
 ],
     maintenance: {
       price: "2.400₺/yıl",
-      title: { tr: "Bakım Paketi", en: "Maintenance Package" },
+      title: { tr: "İçerik Yönetim Paketi", en: "Content Management Package" },
       features: {
         tr: [
-          "İçerik güncelleme & düzenleme",
-          "Domain yenileme takibi",
-          "Site hız & performans kontrolü",
-          "Teknik destek (e-posta)",
+          "Sanity CMS üzerinden içerik yönetimi — haber, duyuru ve galeri gibi içeriklerinizi sizin yerinize ben üretip güncelliyorum.",
         ],
         en: [
-          "Content updates & edits",
-          "Domain renewal tracking",
-          "Site speed & performance check",
-          "Technical support (email)",
+          "Content management via Sanity CMS — I produce and update your content (news, announcements, gallery) so you don't have to.",
         ]
       },
       note: {
-        tr: "Bakım paketi almak zorunda değilsiniz. İsteğe bağlı olarak içerik yönetim paneli kullanımı eğitimi verilir.",
-        en: "Maintenance package is optional. Training on how to use the content management panel is available upon request."
+        tr: "Yıllık ücretlendirilir. Kendi içeriğinizi yönetmeyi tercih ederseniz, ek ücret olmadan bir Sanity CMS kılavuzu sağlanır.",
+        en: "Charged annually. If you'd rather manage your own content, a Sanity CMS guide is provided at no extra cost."
       },
     },
     promoNote: {
       tr: "📩 Projeniz için ücretsiz teklif alın — şu an yeni müşterilere özel fiyatlandırma sunuyoruz.",
       en: "📩 Get a free quote for your project — we currently offer special pricing for new clients."
     },
+    promoSubNote: {
+      tr: "Paketlerde yer almayan özel bir isteğiniz mi var? Görüşüp projenize göre özelleştirebiliriz.",
+      en: "Have a custom request that's not covered by the packages? Let's talk and tailor it to your project."
+    },
     generalNote: {
-      tr: "Domain yıllık yenileme ücreti müşteriye aittir. Ödeme, müşterinin kendi kartı ile yapılır; teknik kurulum ve yönlendirme tarafımdan gerçekleştirilir.",
-      en: "Annual domain renewal fee belongs to the client. Payment is made with the client's own card; technical setup and configuration is handled by me."
+      tr: "Domain yıllık yenileme ücreti müşteriye aittir. Varsayılan olarak ödemeyi ben Cloudflare üzerinden yapar, tutarı sizden tahsil ederim; isterseniz alan adını kendi adınıza alıp ödemeyi doğrudan kendiniz de yönetebilirsiniz. Teknik kurulum ve yönlendirme her durumda tarafımdan gerçekleştirilir.",
+      en: "Annual domain renewal fee belongs to the client. By default, I pay it via Cloudflare and charge you the amount; if you prefer, you can register the domain in your own name and manage the payment directly yourself. Technical setup and configuration is handled by me in either case."
     }
   }
 }
