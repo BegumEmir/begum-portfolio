@@ -45,8 +45,8 @@ packages: [
     price: "8.000₺",
     tagline: { tr: "Dijitale ilk adım", en: "Your first step online" },
     features: {
-      tr: ["1 sayfalık modern site", "İşletmenize özel bölümler", "Mobil uyumlu tasarım", "Domain kurulumu dahil", "SEO & Search Console"],
-      en: ["1-page modern site", "Custom sections for your business", "Mobile friendly design", "Domain setup included", "SEO & Search Console"]
+      tr: ["Tek sayfa, çok bölümlü modern site", "İşletmenize özel bölümler", "Mobil uyumlu tasarım", "Domain kurulumu dahil", "SEO & Search Console"],
+      en: ["Single-page, multi-section modern website", "Custom sections for your business", "Mobile friendly design", "Domain setup included", "SEO & Search Console"]
     },
     highlight: false,
     extra: null
@@ -57,10 +57,10 @@ packages: [
     price: "13.000₺",
     tagline: { tr: "Yönetilebilir site", en: "Manageable website" },
     features: {
-      tr: ["Starter paketteki her şey", "Çok sayfalı site", "İçerik yönetim paneli (Sanity CMS)", "Blog / Haber yönetimi", "Gelişmiş SEO optimizasyonu", "Özel animasyonlar & tasarım", "İki dilli destek (TR/EN)"],
-      en: ["Everything in Starter", "Multi-page site", "Content management panel (Sanity CMS)", "Blog / News management", "Advanced SEO optimization", "Custom animations & design", "Bilingual support (TR/EN)"]
+      tr: ["Starter paketteki her şeye ek olarak", "Çok sayfalı site", "İçerik yönetim paneli (Sanity CMS)", "Blog / Haber yönetimi", "Gelişmiş SEO optimizasyonu", "Özel animasyonlar & tasarım", "İki dilli destek (TR/EN)"],
+      en: ["Everything in Starter, plus", "Multi-page site", "Content management panel (Sanity CMS)", "Blog / News management", "Advanced SEO optimization", "Custom animations & design", "Bilingual support (TR/EN)"]
     },
-    highlight: false,
+    highlight: true,
     extra: null
   },
   {
@@ -72,7 +72,7 @@ packages: [
       tr: ["Professional paketteki her şey", "Özel e-posta kurulumu (info@isletme.com)", "Google İşletme Profili kurulumu", "Aylık performans raporu"],
       en: ["Everything in Professional", "Custom email setup (info@business.com)", "Google Business Profile setup", "Monthly performance report"]
     },
-    highlight: true,
+    highlight: false,
     extra: null
   }
 ],
